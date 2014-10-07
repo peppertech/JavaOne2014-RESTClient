@@ -87,7 +87,6 @@ require(['knockout', 'jquery', 'foundation'],
                         detailsVM.email(data.email);
                         detailsVM.rep(data.rep);
                         detailsVM.mapAddress(detailsVM.address1() + ' ' + detailsVM.city() + ', ' + detailsVM.state() + ' ' + detailsVM.zip());
-                        detailsVM.setCenter();
                         $('#mainContent').show();
                     },
                     error: function (xhr, status, error) {
